@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 console.log("BroadCast");
-var prefix = "#";
+var prefix = "-";
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "la")) {
+            if (message.content.startsWith(prefix + "bc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -27,4 +27,4 @@ client.user.setGame(`!bc |mahmod AR |server`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("NjQ4NTg0NjYyNjY2NDQ0ODE5.XdwYCw.hK3u6eqxz5tyGBFXzHdjXwLZlWU");
